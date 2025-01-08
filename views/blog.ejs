@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Document</title>
+</head>
+<body background="background.jpg" background-repeat:repeat >
+
+    <h1>
+        Hello <%= name %>! Thank you for your post!
+    </h1>
+    <div class="container">
+    <div class="blogpost" style="width: 33%";>
+    <h4 class="date"><%= name%> <%= surname%> wrote on: </h4>
+    <p class="today" style="font-size: 1em; color:#604CC3;"><%=date %></p>
+    <p class="blog" style="font-size: 1em; color:whitesmoke;">"<%= posts %>"</p>
+    <form action="/delete" method="DELETE">
+        <div class="row">
+        <input class =btn type="submit" value="Update">
+        <input type="submit" value="Delete">
+      </div>
+    </form>
+    </div>
+</div>
+</body>
+<%- include("partials/footer.ejs") %>
+</html>
