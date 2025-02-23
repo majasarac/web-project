@@ -1,0 +1,171 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+
+/* Footer variables*/
+.container{
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.footer{
+  
+  position:relative;
+  margin-top: 0px;
+  padding: 3rem 0;  
+  color: white;
+  background : rgb(54, 52, 52);
+  margin-top: auto;
+  &__columns{
+    
+
+
+
+    display:flex;
+    justify-content: space-between;
+  }
+  &__col{
+    &-title{
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      display: inline-block;
+      align-items:center;
+      * ~ span{
+        margin-left: 1rem;
+      }
+    }
+  }
+  a{
+      display: flex;
+      align-items:center;
+    color: white;
+    text-decoration: none;    
+      * ~ span{
+        margin-left: 1rem;
+      }
+  }
+  span{
+        margin-left: 1rem;
+      }
+  &__nav{
+    &-list{
+      display:flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+  &__copyrights{
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(white, 0.2);
+    p{
+      display:flex;
+      a{
+        margin-left: 0.5rem;
+      }
+    }
+  }
+  
+  &__parralax{
+    position:absolute;
+    left:0;
+    top:-300px;
+    height:300px;
+    width: 100%;
+    overflow:hidden;
+    &-premierplan{      
+     background-position: 260px;
+    }
+    
+    
+  }
+}
+
+
+</style>
+<footer class="footer">   
+     
+      <div class="flex-container" style="display:flex; flex-direction: row;">
+        
+      </div>>
+        <div class="footer__col"; style="flex-grow: 1">
+          <h3 class="footer__col-title">
+            <i data-feather="shopping-bag"></i> <span>La boutique</span></h3>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="" class="footer__nav-link">
+                  Mentions légales
+                </a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="" class="footer__nav-link">
+                  Politique de confidentialité
+                </a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="" class="footer__nav-link">
+                  CGV
+                </a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="" class="footer__nav-link">
+                  Livraisons et retours
+                </a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="" class="footer__nav-link">
+                  Règlement concours
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col" style="flex-grow: 1">
+          <h3 class="footer__col-title">
+            <i data-feather="share-2"></i> <span>Nos réseaux</span></h3>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="" class="footer__nav-link">
+                  <i data-feather="youtube"></i><span>Youtube</span>
+                </a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="" class="footer__nav-link">
+                  <i data-feather="facebook"></i><span>Facebook</span>
+                  
+                </a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="" class="footer__nav-link">
+                  <i data-feather="instagram"></i><span>Instagram</span>
+                  
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col" style="flex-grow:1">
+          <h3 class="footer__col-title">
+            <i data-feather="send"></i> <span>Contact</span></h3>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="mailto:contact.laboiserie@gmail.com" class="footer__nav-link">
+                  redcarpet021@gmail.com
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+        <div class="footer__copyrights">
+          <p>Realised for <a href="https://red-carpet.rs/" target="_blank">Red Carpet</a></p>
+        </div>
+        <script src="feather.replace();" type="text/jsx"></script>
+  </footer>
+ 
+  

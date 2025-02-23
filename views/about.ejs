@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+/* Makng parallax scrolling through 3 fixed backgrounds */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("more.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("medals.jpg");
+  min-height: 400px;
+  -webkit-filter: grayscale();
+  filter: grayscale(80%);
+}
+
+.bgimg-3 {
+  background-image: url("maliandrej.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color:transparent;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color:white;
+}
+
+/* Turn off parallax scrolling for tablets and phones from fixed so far to scroll from width down */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg-1">
+    <%- include("partials/header.ejs") %>
+  <div class="caption">
+  <span class="border">we like sea</span>
+  </div>
+</div>
+
+<div style="color: #ddd;background-color:rgb(174, 147, 147);text-align:center;padding:30px 40px;text-align: justify;">
+  <h3 style="text-align:center;">Zadar, Adriatic coast</h3>
+  <p>Because we enjoy its soroundings, colors and winds.. how cool it is to travel and explore new places. Maybe it’s not just the destinations that are exciting, but the moments of discovery, the feeling of freedom, and how even a small change in scenery can open your mind.</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">no stress</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:rgb(174, 147, 147);text-align:center;padding:20px 40px;text-align: justify;">
+  <p>The warm sea, the salty air, and the historical charm of the Old Town—these sensory details could set the stage for how Zadar felt different from anywhere else. Traveling opens up these new experiences, and in this case, the sea, the air, and the architecture seem to hold a certain magic.</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">more fun...</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:rgb(174, 147, 147);text-align:center;padding:20px 40px;text-align: justify;">
+  <p> Zadar’s mix of ancient history and modern life could symbolize something deeper about traveling: how we’re constantly moving forward in life while also being rooted in places, histories, and moments. The sea, with its timelessness, could represent this constant flow! In the end, you could reflect on how traveling, even to a place like Zadar, reminds you of how big the world is and how small, yet significant, your moments are within it. Traveling isn’t just about the places we go—it’s about what those places make us feel and how they change our perspective.</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">just a piece of heaven</span>
+  </div>
+</div>
+
+</body>
+</html>
