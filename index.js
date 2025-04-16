@@ -52,21 +52,15 @@ app.post("/check", (req, res) => {
         date: new Date().toLocaleDateString() // Adding date for simplicity
     }
     notes.push(note);
-    res.render("blog.ejs",{note}); 
-    console.log(req.body);
-    res.redirect('/notes');
+    res.render("notes.ejs",{notes}); 
+    
 });
 
 app.get("/notes", (req, res) => {
     res.render("notes.ejs", { notes: notes });});
 
-app.put("/user", (req, res) =>{
-    res.send();
-});
-app.patch("/user", (req, res) =>{
-    res.send();
-    });
-    
+
+
 app.get("/update/:id", (req, res) => {
     const noteId = req.params.id;
     console.log(noteId);
