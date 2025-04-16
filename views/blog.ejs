@@ -9,18 +9,18 @@
 <body background="background.jpg" background-repeat:repeat >
 
     <h1>
-        Hello <%= name %>! Thank you for your post!
+        Hello <%= note.name %>! Thank you for your post!
     </h1>
     <div class="containerForm">
     <div class="blogpost" style="width: 33%";>
-    <h4 class="date"><%= name%> <%= surname%> wrote on: </h4>
-    <p class="today" style="font-size: 1em; color:#604CC3;"><%=date %></p>
-    <p class="blog" style="font-size: 1em; color:whitesmoke;">"<%= posts %>"</p>
-    <form action="/delete" method="DELETE">
+    <h4 class="date"><%= note.name%> <%= note.surname%> from <%= note.country%> wrote on: </h4>
+    <p class="today" style="font-size: 1em; color:#604CC3;"><%=note.date %></p>
+    <p class="blog" style="font-size: 1em; color:whitesmoke;">"<%= note.posts %>"</p>
+    <form action="/delete/<%= note.id %>" method="POST"> <!-- Use POST method with ID -->
         <div class="row">
-        <input class =btn type="submit" value="Update">
-        <input type="submit" value="Delete">
-      </div>
+            <input class="btn" type="submit" name="action" value="Update">
+            <input type="submit" name="action" value="Delete"> <!-- identifies the action -->
+        </div>
     </form>
     </div>
 </div>

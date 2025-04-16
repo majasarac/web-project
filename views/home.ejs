@@ -1,63 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en" min-height="100vh">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/main.css">
-  <title style="color:antiquewhite;">Home page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Blog</title>
+   
 </head>
-
-<body background="background.jpg" background-repeat: no-repeat>
+<body >   
   <%- include("partials/header.ejs") %>
+  <div class="grid-container"> 
+    <div class="portrait-container" style="width:40%">
+      <img class="portrait" src="images/girl.jpeg">
+    </div>
 
-    <h1 style="color:rgb(29, 81, 95)">We appreciate your toughts on this topic!</h1>
-    <div class="containerForm">
-      <form action="/check" method="POST">
-        <div class="row">
-          <div class="col-25">
-            <label for="fname">First Name:</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="fname" name="firstname" placeholder="enter your name..">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="lname">Last Name:</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="lname" name="lastname" placeholder="and Your last name..">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="country">Country:</label>
-          </div>
-          <div class="col-75">
-            <select id="country" name="country">
-              <option value="ita">Italy</option>
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-              <option value="srb">Serbia</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="subject">Subject</label>
-          </div>
-          <div class="col-75">
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          </div>
-        </div>
-        <br>
-        <div class="row">
-          <input type="submit" value="Submit">
-        </div>
-      </form>
-        </div>
-        <%- include("partials/footer.ejs") %>
+    <div class="textual-container" style="width:80%">
+      <h2>Welcome to my universe...</h2>
+      <p class="description">The Adriatic Coast is a sun-seeker's paradise, renowned for its stunning beaches, crystal-clear waters, and charming coastal towns. From the vibrant city of Dubrovnik with its ancient walls to the idyllic islands of Hvar and Vis, visitors can bask in the warm Mediterranean sun while enjoying breathtaking views.
+
+        Along the coast, sunbathers can relax on pebbled shoreline or sandy beaches, indulge in local seafood cuisine at seaside restaurants, and explore picturesque villages that reflect a rich cultural heritage. Watersports such as sailing, snorkeling, and jet skiing are readily available, offering thrilling adventures alongside tranquil moments of sunbathing.
+        
+        As the sun sets, the Adriatic transforms into a magical playground with vibrant nightlife, from beach bars to bustling markets. Whether seeking relaxation or adventure, the Adriatic Coast is a delightful destination for sun seekers."</p>
+    </div>     
+      
+  </div>
+          
 </body>
+<%- include("partials/footer.ejs") %> 
+
 </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Notes</title>
+</head>
+<body>
+    <h1>Submitted Notes</h1>
+    <div>
+        <% notes.forEach(note => { %>
+            <div>
+                <h4><%= note.name %> <%= note.surname %> from <%= note.country %> wrote:</h4>
+                <p><%= note.posts %></p>
+                <p>Date: <%= note.date %></p>
+                <form action="/delete/<%= note.id %>" method="POST">
+                    <input type="submit" value="Delete">
+                </form>
+                <form action="/update/<%= note.id %>" method="GET" style="display: inline;">
+                    <input class="update-btn" type="submit" value="Update">
+                </form>
+                
+                <hr>
+            </div>
+        <% }) %>
+    </div>
+</body>
+</html>

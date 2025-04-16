@@ -13,7 +13,7 @@
   text-align:center;
   font-size: 2rem;
   font-family: sans-serif;
-  color: #604CC3;
+  color: #601eac;
   ;
  
  }
@@ -22,7 +22,7 @@ h1 {
   text-align: center;
   font-family: sans-serif;
   font-weight: 400;
-  color:#604CC3;
+  color:#601eac;
   
   
  
@@ -65,6 +65,38 @@ h1 {
     color: blue;
 
   }
+  
+
+.city-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the grid items */
+  gap: 20px; /* Spacing between grid items */
+}
+
+.city-card {
+  background-color: rgba(128, 128, 128, 0.7); 
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Fixed width for cards */
+  overflow: hidden; /* Prevent overflow from images */
+  text-align: center;
+}
+
+.city-card img {
+  width: 100%; /* Make image responsive */
+  height: auto;
+}
+
+.city-card h2 {
+  color: #8e33c3;
+  margin: 10px 0;
+}
+
+.city-card p {
+  padding: 0 10px; /* Add some padding for text */
+  color: #151731; /* Darker text for contrast */
+}
   .grid-container{
     display: grid;
     min-height: 100vh;
@@ -143,16 +175,14 @@ h1 {
     background-color: #ddd;
     outline: none;
    
-  }
-  
+  } 
   
   * {
     box-sizing: border-box;
     
     
   }
- 
-  
+   
   input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -221,6 +251,40 @@ color: #604CC3;
 .row{
   display: block;
   align-items: center;
+}
+
+.notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.note-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 15px;
+  width: 300px; /* Fixed width for cards */
+  transition: transform 0.2s;
+}
+
+.note-card:hover {
+  transform: scale(1.02); /* Grows button slightly on hover */
+}
+
+.delete-btn {
+  background-color: #D9534F; /* Bootstrap danger color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #C9302C; /* Darker red on hover */
 }
  
   

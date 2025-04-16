@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Update Note</title>
+</head>
+<body>
+    <h1 style="text-align: center; color: #1D515F;">Update Your Note</h1>
+    
+    <div class="container">
+        <form action="/update/<%= note.id %>" method="POST">
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Note:</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" required style="height: 200px; width: 100%;" placeholder="Update your note..."><%= note.posts %></textarea>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <input type="submit" value="Update Note">
+            </div>
+        </form>
+    </div>
+
+    <div class="row" style="margin-top: 20px; text-align: center;">
+        <a href="/notes">Back to Notes</a>
+    </div>
+</body>
+</html>

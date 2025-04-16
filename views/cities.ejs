@@ -4,32 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
-    <title>Document</title>
+    <title>City Gallery</title>
 </head>
-<body >
+<body>
     <%- include("partials/header.ejs") %>
-    <div class="listItems" >
-    <h1 style="color:#604CC3; text-align: center;font: 3em sans-serif; ">My favorite cities</h1>
-    <ul style="color:#FF7F3E; text-align: center; font: 2rem sans-serif; list-style: none; text-shadow: 2px 2px 4px #000000;" class="cities">
-        <li>Wien</li>
-        <li>Bratislava</li>
-        <li>London</li>
-        <a href="https://www.britannica.com/place/Rome"><li>Rome</li> </a>
-        <li>Brussel</li>
-        <li>Zurich</li>
-        <li>Novi Sad</li>
-        <li>Budapest</li>
-        <a href="https://sr.wikipedia.org/sr-el/%D0%9A%D1%99%D0%B0%D1%98%D0%B8%D1%9B%D0%B5%D0%B2%D0%BE"><li>Kljajicevo</li></a>
-        <li>St Tropez</li>
-        <li>Opatija</li>
-        <li>Zeneva</li>
-        <li>Slankamen</li>
-    </ul>
-    </div>
-    <div>
-        
-    </div>
     
+    <h1 style="text-align: center; color: #604CC3; font-size: 3em;">Explore My Favorite Cities</h1>
+    
+    <div class="city-grid">
+        <div class="city-card">
+            <img src="vienna.jpg" alt="Wien" />
+            <h2>Wien</h2>
+            <p>A beautiful city known for its historic architecture and vibrant cultural scene. <a href ="https://www.wien.gv.at/english/">More..</a></p>
+        </div>
+        <div class="city-card">
+            <img src="town.jpg" alt="Bratislava" />
+            <h2>Bratislava</h2>
+            <p>The charming capital of Slovakia, nestled along the Danube River.  <a href="https://www.visitbratislava.com/it/">  More..</a></p>
+        </div>
+        <div class="city-card">
+            <img src="london.jpg" alt="London" />
+            <h2>London</h2>
+            <p>The bustling capital of the UK, famous for its history, landmarks, and diversity. <a href="https://www.visitlondon.com/"> More..</a></p>
+        </div>
+        <div class="city-card">
+            <img src="rome.jpeg" alt="Rome" />
+            <h2 >Rome</h2>
+            <p>The Eternal City, rich in history and renowned for its ancient architecture. <a href="https://www.rome.net">More...</a></p>
+        </div>
+        <div class="city-card">
+            <img src="brussels.jpg" alt="Brussels" />
+            <h2>Brussels</h2>
+            <p>The capital of Belgium, known for its beautiful squares and delicious chocolates. <a href="https://be.brussels/en">More...</a></p>
+        </div>
+        <div class="city-card">
+            <img src="zurich.jpeg" alt="Zurich" />
+            <h2>Zurich</h2>
+            <p>A global financial hub, Switzerland's largest city is a blend of culture and nature. <a href ="https://www.zuerich.com/en">More...</a></p>
+        </div>
+        <!-- Add more cities as needed -->
+    </div>
+
+    <%- include("partials/footer.ejs") %>
 </body>
-<%- include("partials/footer.ejs") %>
 </html>
