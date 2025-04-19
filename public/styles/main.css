@@ -1,5 +1,4 @@
 .description {
-  
   text-align: center;
   float:left;
   font-size: 1rem;
@@ -7,39 +6,24 @@
   color: #604CC3;
   padding: 1px 5px 5px 5px;
   
-  
  }
+
  h2{
   text-align:center;
   font-size: 2rem;
   font-family: sans-serif;
   color: #601eac;
-  ;
  
- }
+  }
 h1 {
   line-height: 1.5;
   text-align: center;
   font-family: sans-serif;
   font-weight: 400;
   color:#601eac;
-  
-  
- 
+   
 }
-.btn-group button {
-    background-color: #FE7A36; /* Green background */
-    border: 1px solid green; /* Green border */
-    align-items:stretch;
-    color: white; /* White text */
-    padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    /*float: left;  Float the buttons side by side */
-    padding : 12px 24px;
-    border-radius:8px;
-    size:20px 40px;
-    
-  }
+
   html{
     /*background-color: #87C4FF;*/
     position:relative;
@@ -49,10 +33,7 @@ h1 {
 
     
   }
-  .btn-group button:hover {
-    background-color: #FE7A36;
-    grid-column: span 2;
-  }
+
   .btn-group{
     display: inline;
     grid-column: span 2;
@@ -66,7 +47,6 @@ h1 {
 
   }
   
-
 .city-grid {
   display: flex;
   flex-wrap: wrap;
@@ -122,15 +102,61 @@ h1 {
     /*background-image:url("./back-colorful.jpg");*/
     /*background-image:url("../img_parallax.jpg");*/
   }
+  .home-container {
+    display:flex;
+    flex-direction:column; 
+    align-items: center;
+    padding: 20px;
+  }
 
   .portrait { 
-    width:  19rem;
-    height: 23rem;
-    margin-left: 20px;
-    margin-top: 30px;
+    width:100%;
+    max-width:500px;
+    height: 33%;       
+    border-radius: 60%;
+    border-color: aqua;
+    border-width: 1px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   }
   
+  .textual-container{   
+    flex:2;
+    border: 2px whitesmoke;
+    max-width: 800px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width:100%;
+    align-content: left;
+      
+  }
+  .portrait-container{
+    display: flex;
+    flex:1;
+    margin-right:40px;
+    margin-left:40px;
+    margin-bottom: 20px;   
+    width:30%;
+    height: 50%;
+    max-width:450px;
+  }
+  @media (min-width: 768px) {
+    .home-container {
+        flex-direction: row; /* Arrange side by side on larger screens */
+        justify-content: space-between;
+    }
+
+    .portrait-container, .textual-container {
+        margin-right: 20px;             /* Space between image and text */
+    
+    }
+
+    .textual-container {
+        padding: 15px;
+        margin-left: 20px; /* Space between image and text */
+    }
+}
+
+
 
   p{
     text-align: center;
@@ -161,15 +187,6 @@ h1 {
 
   }
 
-
-   .textual-container{   
-    border: 2px whitesmoke;
-    padding: 15px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    width:70%;
-      
-  }
 
   input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
@@ -290,7 +307,7 @@ color: #604CC3;
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    .col-25, .col-75, p, .portrait, input[type=submit] {
+    .col-25, .col-75, p, .portrait, .portrait-container, input[type=submit] {
       width: 100%;
       margin-top: 0;
       bottom: 0;
@@ -299,15 +316,7 @@ color: #604CC3;
   }
  
  
-  .portrait-container{
-    display: flex;
-  }
-  .portrait{
-    border-radius: 60%;
-    border-color: aqua;
-    border-width: 1px;
-  }
-
+ 
 
 
   

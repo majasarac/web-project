@@ -96,7 +96,7 @@ app.post('/delete/:id', (req, res) => {
         const noteId = req.params.id;
         // Remove the note from the array based on the ID
         notes = notes.filter(note => note.id !== noteId);
-        res.redirect("notes.ejs"); // Redirect back to the notes page
+        res.redirect("/blog"); // Redirect back to the notes page
     });
 app.listen(port, ()=>{
     console.log(`active port at ${port}`);
