@@ -30,8 +30,7 @@ h1 {
     background-image: parallax_img3;
     padding-bottom: 10px;
     min-height: 100%;
-
-    
+   
   }
 
   .btn-group{
@@ -120,7 +119,7 @@ h1 {
   }
   
   .textual-container{   
-    flex:2;
+    flex:3;
     border: 2px whitesmoke;
     max-width: 800px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -195,8 +194,7 @@ h1 {
   } 
   
   * {
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
     
   }
    
@@ -314,11 +312,19 @@ color: #604CC3;
       
     }
   }
+  @media (min-width: 1240px) {
+    h2 {
+        font-size: 3em;                 /* Larger heading for bigger screens */
+    }
+    .city-card{
+      width:360px;
+    }
+    .portrait{
+      width:300px;
+            
+    }
+    .textual-container{
+      width:950px;
+    }
  
- 
- 
-
-
-  
- 
- 
+  }
