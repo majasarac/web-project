@@ -317,14 +317,14 @@ color: #604CC3;
         font-size: 3em;                 /* Larger heading for bigger screens */
     }
     .city-card{
-      width:360px;
+      width:390px;
     }
     .portrait{
       width:300px;
             
     }
     .textual-container{
-      width:950px;
+      max-width:1200px;
     }
  
   }
