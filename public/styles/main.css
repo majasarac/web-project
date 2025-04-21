@@ -154,9 +154,6 @@ h1 {
         margin-left: 20px; /* Space between image and text */
     }
 }
-
-
-
   p{
     text-align: center;
   }
@@ -192,11 +189,9 @@ h1 {
     outline: none;
    
   } 
-  
-  * {
-    box-sizing: border-box;  
-    
-  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+}
    
   input[type=text], select, textarea {
     width: 100%;
