@@ -89,7 +89,7 @@ app.post('/update/:id', (req, res) => {
         });
     
         // Redirect back to the notes page
-        res.render("notes.ejs",{notes});
+        //res.render("notes.ejs",{notes});
     });
 
 app.post('/delete/:id', (req, res) => {
